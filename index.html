@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
     <style>
         .property-card:hover {
             transform: translateY(-5px);
@@ -22,25 +23,14 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
+            <div class="flex justify-center items-center h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <i data-feather="home" class="h-8 w-8 " style="color: #93441A;"></i>
-                        <span class="ml-2 text-xl font-bold text-indigo-600" style="color: #93441A;">OH Résidences</span>
+                        <span class="ml-2 text-xl font-bold text-indigo-600 " style="color: #93441A;">OH Résidences</span>
                     </div>
                 </div>
-                <div class="hidden sm:ml-6 sm:flex sm:items-center">
-                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-[ #93441A] hover:text-[ #93441A]">Accueil</a>
-                    <a href="#properties" class="px-3 py-2 rounded-md text-sm font-medium text-[ #93441A] hover:text-[ #93441A]">Nos Résidences</a>
-                    <a href="#how-it-works" class="px-3 py-2 rounded-md text-sm font-medium text-[ #93441A]hover:text-[ #93441A]">Comment ça marche</a>
-                    <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-[ #93441A] hover:text-[ #93441A]">Contact</a>
-                </div>
-                <div class="-mr-2 flex items-center sm:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
+                
             </div>
         </div>
     </nav>
@@ -80,8 +70,8 @@
        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Property 1 -->
             <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Villa Méditerranée', ['http://static.photos/nature/640x360/1', 'http://static.photos/nature/640x360/2', 'http://static.photos/nature/640x360/3', 'http://static.photos/nature/640x360/4'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/nature/640x360/1" alt="Villa de luxe">
+                <div class="relative h-80 w-full overflow-hidden cursor-pointer" onclick="openGallery('Studio', ['IMG-20251011-WA0004.jpg', 'IMG-20251011-WA0006.jpg', 'IMG-20251011-WA0001.jpg', 'IMG-20251011-WA0003.jpg'])">
+                    <img class="h-full w-full object-cover" src="./IMG-20251011-WA0002.jpg" alt="Villa de luxe">
                     <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                         <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
                     </div>
@@ -89,15 +79,15 @@
                 <div class="p-6">
                     <div class="flex items-center">
                         <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Cocody, Angré terminus</span>
+                        <span class="ml-2 text-sm text-gray-500">Cocody, Angré Mahou</span>
                     </div>
-                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Villa Méditerranée</h3>
-                    <p class="mt-2 text-gray-600">Superbe villa avec vue sur mer, piscine privée et 4 chambres.</p>
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Studio</h3>
+                    <p class="mt-2 text-gray-600">Chambre climatisé, Cuisine équipé, WIFI, télé connectée, NETFLIX.</p>
                     <div class="mt-4 flex justify-between items-center">
                         <div>
                             <span class="text-2xl font-bold text-[#93441A]">20.000 CFA/jour</span>
                         </div>
-                        <button onclick="checkAvailability('Villa Méditerranée', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
+                        <button onclick="checkAvailability('Studio', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
                             Réserver
                         </button>
                     </div>
@@ -106,8 +96,8 @@
 
             <!-- Property 2 -->
             <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Loft Parisien', ['http://static.photos/cityscape/640x360/2', 'http://static.photos/cityscape/640x360/5', 'http://static.photos/cityscape/640x360/6', 'http://static.photos/cityscape/640x360/7'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/cityscape/640x360/2" alt="Appartement moderne">
+                <div class="relative h-80 w-full overflow-hidden cursor-pointer" onclick="openGallery('Duplex', ['IMG-20251011-WA0018.jpg', 'IMG-20251011-WA0020.jpg', 'IMG-20251011-WA0021.jpg', 'IMG-20251011-WA0022.jpg', 'IMG-20251011-WA0024.jpg', 'IMG-20251011-WA0026.jpg', 'IMG-20251011-WA0027.jpg', 'IMG-20251011-WA0028.jpg', 'IMG-20251011-WA0029.jpg', 'IMG-20251011-WA0030.jpg', 'IMG-20251011-WA0032.jpg', 'IMG-20251011-WA0033.jpg', 'IMG-20251011-WA0034.jpg', 'IMG-20251011-WA0035.jpg', 'IMG-20251011-WA0037.jpg'])">
+                    <img class="h-full w-full object-cover" src="./IMG-20251011-WA0028.jpg" alt="Appartement moderne">
                     <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                         <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
                     </div>
@@ -115,15 +105,15 @@
                 <div class="p-6">
                     <div class="flex items-center">
                         <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Yopougon, MIllionaire</span>
+                        <span class="ml-2 text-sm text-gray-500">Cocody, Palmeraie Marthe Robin</span>
                     </div>
-                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Loft Parisien</h3>
-                    <p class="mt-2 text-gray-600">Appartement moderne au cœur de Paris avec terrasse panoramique.</p>
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Duplex</h3>
+                    <p class="mt-2 text-gray-600">4 Chambres autonomes, Deux cuisines totalement équipées, Une piscine, Un bar, Un preau, Jardin, Jacuzzi, Tele connecté, Wifi.</p>
                     <div class="mt-4 flex justify-between items-center">
                         <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€95/nuit</span>
+                            <span class="text-2xl font-bold text-[#93441A]">250.000 CFA/jour</span>
                         </div>
-                        <button onclick="checkAvailability('Loft Parisien', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
+                        <button onclick="checkAvailability('Duplex', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
                             Réserver
                         </button>
                     </div>
@@ -131,8 +121,8 @@
             </div>
             <!-- Property 3 -->
             <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Chalet Alpin', ['http://static.photos/travel/640x360/3', 'http://static.photos/travel/640x360/8', 'http://static.photos/travel/640x360/9', 'http://static.photos/travel/640x360/10'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/travel/640x360/3" alt="Chalet montagne">
+                <div class="relative h-80 w-full overflow-hidden cursor-pointer" onclick="openGallery('Studio meublé avec cour arrière', ['IMG-20251011-WA0054.jpg', 'IMG-20251011-WA0055.jpg', 'IMG-20251011-WA0056.jpg', 'IMG-20251011-WA0057.jpg'])">
+                    <img class="h-full w-full object-cover" src="./IMG-20251012-WA0006.jpg" alt="Chalet montagne">
                     <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                         <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
                     </div>
@@ -140,15 +130,15 @@
 <div class="p-6">
                     <div class="flex items-center">
                         <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Chamonix, France</span>
+                        <span class="ml-2 text-sm text-gray-500">Cocody,</span>
                     </div>
-<h3 class="mt-2 text-xl font-semibold text-gray-900">Chalet Alpin</h3>
-                    <p class="mt-2 text-gray-600">Chalet traditionnel avec cheminée, accès direct aux pistes.</p>
+<h3 class="mt-2 text-xl font-semibold text-gray-900">Studio meublé avec cour arrière</h3>
+                    <p class="mt-2 text-gray-600">Climatiseur, Ventilateur, Wifi, Netflix, YouTube, Gazinière avec four.</p>
                     <div class="mt-4 flex justify-between items-center">
                         <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€150/nuit</span>
+                            <span class="text-2xl font-bold text-[#93441A]">20.000 CFA/jour</span>
                         </div>
-                        <button onclick="checkAvailability('Chalet Alpin', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
+                        <button onclick="checkAvailability('Studio meublé avec cour arrière', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
                             Réserver
                         </button>
 </div>
@@ -157,8 +147,8 @@
 
             <!-- Property 4 -->
             <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Villa Azur', ['http://static.photos/nature/640x360/4', 'http://static.photos/nature/640x360/11', 'http://static.photos/nature/640x360/12', 'http://static.photos/nature/640x360/13'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/nature/640x360/4" alt="Villa bord de mer">
+                <div class="relative h-80 w-full overflow-hidden cursor-pointer" onclick="openGallery('2 pièces avec balcon disponible au 4eme étage', ['IMG-20251011-WA0064.jpg', 'IMG-20251012-WA0005.jpg', 'IMG-20251011-WA0062.jpg', 'IMG-20251011-WA0059.jpg', 'IMG-20251011-WA0063.jpg', 'IMG-20251011-WA0061.jpg'])">
+                    <img class="h-full w-full object-cover" src="./IMG-20251011-WA0062.jpg" alt="Villa bord de mer">
                     <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                         <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
                     </div>
@@ -166,119 +156,15 @@
                 <div class="p-6">
                     <div class="flex items-center">
                         <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Saint-Tropez, France</span>
+                        <span class="ml-2 text-sm text-gray-500">Cocody,</span>
                     </div>
-                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Villa Azur</h3>
-                    <p class="mt-2 text-gray-600">Luxueuse villa avec accès privé à la plage et vue panoramique.</p>
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">2 pièces avec balcon disponible au 4eme étage </h3>
+                    <p class="mt-2 text-gray-600">Équipement de sport, Grand salon, Salle à manger, Climatiseurs, Wifi, Netflix, YouTube, Réfrigérateur, Gaziniere avec four, Mixeur, Micro-onde, Machine à laver, Sèche-linge, Fer à repasser, Planche de fer à repasser, Télés connectées.</p>
                     <div class="mt-4 flex justify-between items-center">
                         <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€250/nuit</span>
+                            <span class="text-2xl font-bold text-[#93441A]">40.0000/jour</span>
                         </div>
-                        <button onclick="checkAvailability('Villa Azur', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
-                            Réserver
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Property 5 -->
-            <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Loft Lyonnais', ['http://static.photos/cityscape/640x360/5', 'http://static.photos/cityscape/640x360/14', 'http://static.photos/cityscape/640x360/15', 'http://static.photos/cityscape/640x360/16'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/cityscape/640x360/5" alt="Appartement moderne">
-                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                        <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
-                    </div>
-                </div>
-<div class="p-6">
-                    <div class="flex items-center">
-                        <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Lyon, France</span>
-                    </div>
-<h3 class="mt-2 text-xl font-semibold text-gray-900">Loft Lyonnais</h3>
-                    <p class="mt-2 text-gray-600">Appartement design en plein centre-ville avec terrasse privée.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€85/nuit</span>
-                        </div>
-                        <button onclick="checkAvailability('Loft Lyonnais', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
-                            Réserver
-                        </button>
-</div>
-                </div>
-            </div>
-
-            <!-- Property 6 -->
-            <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Maison Provençale', ['http://static.photos/travel/640x360/6', 'http://static.photos/travel/640x360/17', 'http://static.photos/travel/640x360/18', 'http://static.photos/travel/640x360/19'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/travel/640x360/6" alt="Maison campagne">
-                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                        <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
-                    </div>
-                </div>
-<div class="p-6">
-                    <div class="flex items-center">
-                        <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Provence, France</span>
-                    </div>
-<h3 class="mt-2 text-xl font-semibold text-gray-900">Maison Provençale</h3>
-                    <p class="mt-2 text-gray-600">Charmante maison avec piscine et jardin fleuri au cœur de la Provence.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€130/nuit</span>
-                        </div>
-                        <button onclick="checkAvailability('Maison Provençale', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
-                            Réserver
-                        </button>
-</div>
-                </div>
-            </div>
-
-            <!-- Property 7 -->
-            <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Cabane Perchée', ['http://static.photos/nature/640x360/7', 'http://static.photos/nature/640x360/20', 'http://static.photos/nature/640x360/21', 'http://static.photos/nature/640x360/22'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/nature/640x360/7" alt="Cabane arbres">
-                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                        <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
-                    </div>
-                </div>
-<div class="p-6">
-                    <div class="flex items-center">
-                        <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Normandie, France</span>
-                    </div>
-<h3 class="mt-2 text-xl font-semibold text-gray-900">Cabane Perchée</h3>
-                    <p class="mt-2 text-gray-600">Cabane insolite dans les arbres avec vue exceptionnelle sur la forêt.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€90/nuit</span>
-                        </div>
-                        <button onclick="checkAvailability('Cabane Perchée', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
-                            Réserver
-                        </button>
-</div>
-                </div>
-            </div>
-
-            <!-- Property 8 -->
-            <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <div class="relative h-48 w-full overflow-hidden cursor-pointer" onclick="openGallery('Penthouse Cannes', ['http://static.photos/cityscape/640x360/8', 'http://static.photos/cityscape/640x360/23', 'http://static.photos/cityscape/640x360/24', 'http://static.photos/cityscape/640x360/25'])">
-                    <img class="h-full w-full object-cover" src="http://static.photos/cityscape/640x360/8" alt="Penthouse">
-                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                        <span class="text-white bg-[#93441A] px-3 py-1 rounded-full text-sm font-medium">Voir plus</span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center">
-                        <span class="inline-block px-2 py-1 text-xs font-semibold text-white bg-[#93441A] rounded-full available-tag">Disponible</span>
-                        <span class="ml-2 text-sm text-gray-500">Cannes, France</span>
-                    </div>
-                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Penthouse Cannes</h3>
-                    <p class="mt-2 text-gray-600">Penthouse luxueux avec vue sur la baie de Cannes et accès à la plage.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <div>
-                            <span class="text-2xl font-bold text-[#93441A]">€300/nuit</span>
-                        </div>
-                        <button onclick="checkAvailability('Penthouse Cannes', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
+                        <button onclick="checkAvailability('2 pièces avec balcon disponible au 4eme étage', this)" class="px-4 py-2 bg-[#93441A] text-white text-sm font-medium rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 book-btn">
                             Réserver
                         </button>
                     </div>
@@ -293,7 +179,7 @@
             <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity" aria-hidden="true"></div>
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
             <div class="inline-block align-bottom rounded-lg overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
-                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4" style="height: 540px;">
                     <div class="flex justify-between items-center mb-4">
                         <h3 id="galleryTitle" class="text-lg font-medium text-gray-900"></h3>
                         <button onclick="closeGallery()" class="text-gray-400 hover:text-gray-500">
@@ -388,7 +274,7 @@
                                 <i data-feather="mail" class="h-6 w-6 text-[#93441A]"></i>
                             </div>
                             <div class="ml-3 text-base text-gray-500">
-                                <p>contact@casarent.com</p>
+                                <p>kandoyvan2@gmail.com</p>
                             </div>
                         </div>
                         <div class="mt-3 flex items-start">
@@ -396,21 +282,21 @@
                                 <i data-feather="phone" class="h-6 w-6 text-[#93441A]"></i>
                             </div>
                             <div class="ml-3 text-base text-gray-500">
-                                <p>+33 6 12 34 56 78</p>
+                                <p>+225 0710013326</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-gray-50 px-6 py-8 sm:px-10 sm:py-12">
-                    <form>
+                    <form id="messageform">
                         <div class="grid grid-cols-1 gap-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700">Nom complet</label>
                                 <input type="text" name="name" id="name" autocomplete="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                <label for="telephone" class="block text-sm font-medium text-gray-700">Téléphone</label>
+                                <input type="tel" name="telephone" id="telephone" autocomplete="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                             </div>
                             <div>
                                 <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
@@ -499,30 +385,27 @@
                             <form id="bookingForm">
                                 <div class="space-y-4">
                                     <div>
-                                        <label for="fullName" class="block text-sm font-medium text-gray-700">Nom complet</label>
-                                        <input type="text" id="fullName" name="fullName" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                        <label for="Nom_complet" class="block text-sm font-medium text-gray-700">Nom complet</label>
+                                        <input type="text" id="nom_complet" name="nom_complet" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                     </div>
+            
                                     <div>
-                                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                                        <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-                                    </div>
-                                    <div>
-                                        <label for="phone" class="block text-sm font-medium text-gray-700">Téléphone</label>
-                                        <input type="tel" id="phone" name="phone" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                        <label for="Téléphone" class="block text-sm font-medium text-gray-700">Téléphone</label>
+                                        <input type="tel" id="telephone" name="telephone" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                     </div>
                                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div>
-                                            <label for="checkIn" class="block text-sm font-medium text-gray-700">Date d'arrivée</label>
-                                            <input type="date" id="checkIn" name="checkIn" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                            <label for="Arrivée" class="block text-sm font-medium text-gray-700">Date d'arrivée</label>
+                                            <input type="date" id="arrivee" name="arrivee" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                         </div>
                                         <div>
-                                            <label for="checkOut" class="block text-sm font-medium text-gray-700">Date de départ</label>
-                                            <input type="date" id="checkOut" name="checkOut" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                            <label for="Départ" class="block text-sm font-medium text-gray-700">Date de départ</label>
+                                            <input type="date" id="depart" name="depart" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="guests" class="block text-sm font-medium text-gray-700">Nombre de personnes</label>
-                                        <select id="guests" name="guests" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                        <label for="Nombre" class="block text-sm font-medium text-gray-700">Nombre de personnes</label>
+                                        <select id="nombre" name="nombre" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -576,7 +459,8 @@
             </div>
         </div>
     </div>
-
+    
+    
     <script>
         // Gallery variables
         let currentGalleryImages = [];
@@ -760,6 +644,62 @@ if (event.target === document.getElementById('bookingModal')) {
                 closeSuccessModal();
             }
         }
+
+    
     </script>
+    
+    
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+  (function() {
+    emailjs.init("FPt38AfoKMP9XXLqY"); // ✅ ta clé publique
+  })();
+
+  function submitBooking() {
+    const form = document.getElementById("bookingForm");
+
+    emailjs.send("service_4jinfue", "template_07ta155", {
+      nom_complet: form.nom_complet.value,
+      telephone: form.telephone.value,
+      arrivee: form.arrivee.value,
+      depart: form.depart.value,
+      nombre: form.nombre.value
+    })
+    .then(function() {
+      closeModal();
+      document.getElementById("successModal").classList.remove("hidden");
+    }, function(error) {
+      alert("❌ Erreur d'envoi : " + JSON.stringify(error));
+    });
+  }
+ </script>
+  
+  <!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    // Initialisation EmailJS avec ta clé publique
+    emailjs.init("FPt38AfoKMP9XXLqY"); // ✅ remplace par ta clé publique si elle change
+  })();
+
+  // Gestion de l’envoi du formulaire
+  document.getElementById("messageform").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.send("service_4jinfue", "template_5r9s6i8", {
+      name: document.getElementById("name").value,
+      telephone: document.getElementById("telephone").value,
+      message: document.getElementById("message").value
+    })
+    .then(() => {
+      alert("✅ Message envoyé avec succès !");
+      e.target.reset();
+    })
+    .catch((error) => {
+      alert("❌ Erreur d’envoi : " + JSON.stringify(error));
+    });
+  });
+</script>
+
 </body>
 </html>
